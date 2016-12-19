@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator Version 2 - Angular 1</title>
+    <link href="styles.css" rel="stylesheet">
+    <!--js script is in the head with an async attribute, allowing the html to be parsed without waiting for the js script to load first-->
+    <script src="script.js" async></script>
+
+    <body>
+        <div ng-app="ky_calculator">
+            <div ng-controller="Calculator">
+                <div class="keys">
+                    <div class="row" id="title_row">
+                        <h1 id="title_header">Calculator</h1>
+                    </div>
+                    <div class="row" id="window">
+                        <input class="" type="readonly" disabled ng-model="console" id="main_console" maxlength="10">
+                    </div>
+                    <div class="row">
+                        <button class="key function" ng-click="clear_total()">C</button>
+                        <button class="key function" ng-click="change_positivity()">+/-</button>
+                        <button class="key function" ng-click="add()">+</button>
+                        <button class="key function" ng-click="subtract()">-</button>
+                        <button class="key function" ng-click="multiply()">x</button>
+                        <button class="key function" ng-click="divide()">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="key number" ng-click="print('7')">7</button>
+                        <button class="key number" ng-click="print('8')">8</button>
+                        <button class="key number" ng-click="print('9')">9</button>
+
+                    </div>
+                    <div class="row">
+                        <button class="key number" ng-click="print('4')">4</button>
+
+
+                        <button class="key number" ng-click="print('5')">5</button>
+                        <button class="key number" ng-click="print('6')">6</button>
+                    </div>
+                    <div class="row">
+                        <button class="key number" ng-click="print('1')">1</button>
+
+
+                        <button class="key number" ng-click="print('2')">2</button>
+                        <button class="key number" ng-click="print('3')">3</button>
+                    </div>
+                    <div class="row">
+                        <button class="key number" ng-click="print('0')">0</button>
+                        <button class="key number" ng-click="print('.')">.</button>
+                        <button class="key" ng-click="equal()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+
+</head>
