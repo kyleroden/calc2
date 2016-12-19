@@ -1,0 +1,51 @@
+#title_row {
+  justify-content: center;
+}
+#title_header {
+ font-weight: 700;
+  font-size: 3.5em;
+}
+
+.keys {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+}
+.function {
+  background-color: #657F6F;
+  flex-basis: 20%;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#window {
+  display: block;
+
+}
+#main_console {
+  height: 2.3em;
+  color: white;
+  width: 100%;
+  font-size: 1.9em;
+  text-align: right;
+  background-color: #324037;
+  padding: 16px 16px;
+}
+#main_console * {
+  font-weight: 700;
+}
+.key {
+  display: inline-block;
+  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding: 10px 0px;
+  font-size: 1.7em;
+}
+.number {
+
+}
