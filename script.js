@@ -1,9 +1,9 @@
-angular.module('ky_calculator', [])
-    .controller('Calculator', ['$scope', Calculator]);
+'use strict';
 
+angular.module('ky_calculator', [])
+      .controller('Calculator', ['$scope',
 function Calculator($scope) {
     $scope.console = 0;
-
     var total = 0;
     var state = null;
 
@@ -71,4 +71,4 @@ function Calculator($scope) {
         total = 0;
         state = null;
     }
-}
+}]);
